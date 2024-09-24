@@ -173,10 +173,11 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
         elif current == "duck2":
             i += 1
             current = "goose"
-        elif current == "goose":
+        else:
             lst.pop(i)
             current = "duck1"
-    if i == len(lst): i = 0
+            
+        if i == len(lst): i = 0
     
 
     return lst
