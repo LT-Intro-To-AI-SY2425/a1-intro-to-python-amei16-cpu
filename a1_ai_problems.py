@@ -17,3 +17,28 @@ assert fizbuzz(5) == "Buzz", "fizzbuzz 5 test"
 assert fizbuzz(6) == "Fizz", "fizzbuzz 6 test"
 assert fizbuzz(15) == "FizzBuzz", "fizzbuzz 15 test"
 
+#def factorial(n):
+
+    #s = n
+    #for i in range(1,n):
+    #    s *= i
+    #return s
+
+def fibonacci(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    
+    el = 0
+    el2 = 1
+    for i in range(2, n+1):
+        el = el2
+        el2 = el+el2
+    return el2
+
+
+
+
+    
+
